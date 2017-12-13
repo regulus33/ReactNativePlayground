@@ -23,6 +23,10 @@ Run ```npm install```
 
 since this is Android first, open android studio and select tools >> Android >> AVD manager >> select existing or create new device (basically run an instance of the emulator)
 
+OR
+
+to run on your actual phone, after enabling developer options, go to developer options and make sure enable usb debugging is selected, then plug your phone in via usb. Authorize your dev machine to connect.
+
 then run
 
 ``` react-native run-android ```
