@@ -35,3 +35,21 @@ or
 
 
 ``` react-native run-ios ```
+
+
+```open dev options on android with command + m```
+
+## esling config
+
+```npm install --save-dev eslint-config-rallycoding```
+
+then create a .eslintrc file in your root directory of the project,
+add this code:
+
+```
+{
+  "extends" : "rallycoding"
+}
+```
+
+close sublime then reopen

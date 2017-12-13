@@ -19,11 +19,11 @@ export const passwordChanged = (text) => {
     };
 };
 
-export const loginUser = ({ email, password}) => {
+export const loginUser = ({ email, password }) => {
   return (dispatch) => {
     firebase.auth().signInWithEmailAndPassWord(email, password)
       .then(user => {
-        dispatch({ type: 'LOGIN_USER_SUCCESS', payload: user })
+        dispatch({ type: 'LOGIN_USER_SUCCESS', payload: user });
       });
   };
 };

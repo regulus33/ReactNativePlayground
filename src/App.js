@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
+import firebase from 'firebase';
+import ReduxThunk from 'redux-thunk';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 import reducers from './reducers';
-import firebase from 'firebase';
-import ReduxThunk from 'redux-thunk';
 import LoginForm from './components/LoginForm';
 
 class App extends Component {
@@ -36,4 +36,4 @@ class App extends Component {
 
 }
 
-export default App
+export default App;
