@@ -11,9 +11,9 @@ export const emailChanged = (text) => {
     };
 };
 
-export const emailChanged = (text) => {
+export const passwordChanged = (text) => {
     return {
-      type: 'email_change',
+      type: 'password_change',
       payload: text
     };
 };

@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 class LoginForm extends Component {
 
   onEmailChange(text) {
-    this.props.passwordChanged(text)
+    this.props.emailChanged(text)
   }
 
   onPassWordChange(text) {
@@ -30,6 +30,7 @@ class LoginForm extends Component {
             placeholder="Password"
             secureTextEntry
             label="Password"
+            value={this.props.password}
             onChangeText={this.onPassWordChange.bind(this)}
           />
         </CardSection>
@@ -58,4 +59,4 @@ const mapStateToProps = state => {
   };
 };
 
-export default LoginForm;
+export default connect(mapStateToProps, { emailChanged, passwordChanged })(LoginForm);
