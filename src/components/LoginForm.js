@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Card, CardSection, Button, Input } from './common';
-import { emailChanged, passwordChanged } from '../actions';
+import { emailChanged, passwordChanged, loginUser } from '../actions';
 import { connect } from 'react-redux';
 
 class LoginForm extends Component {
@@ -59,4 +59,4 @@ const mapStateToProps = state => {
   };
 };
 
-export default connect(mapStateToProps, { emailChanged, passwordChanged })(LoginForm);
+export default connect(mapStateToProps, { emailChanged, passwordChanged, loginUser })(LoginForm);
