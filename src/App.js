@@ -11,7 +11,7 @@ class App extends Component {
 
 
   componentWillMount() {
-    var config = {
+    let config = {
       apiKey: "AIzaSyDLh0cnbmp61jfPJpU399ihBJm4cyIpzPY",
       authDomain: "taskman-d49b3.firebaseapp.com",
       databaseURL: "https://taskman-d49b3.firebaseio.com",
@@ -24,9 +24,9 @@ class App extends Component {
   }
 
   render() {
-    const store = createStore(reducers, {}, applyMiddleware(ReduxThunk))
+    const store = createStore(reducers, {}, applyMiddleware(ReduxThunk));
     return (
-      <Provider store={ store }>
+      <Provider store={store}>
         <View>
          <LoginForm/>
         </View>
