@@ -11,6 +11,7 @@ const RouterComponent = () => {
           key="login"
           component={LoginForm}
           title="Please Log In"
+          initial
         />
         <Scene
           key="taskList"
