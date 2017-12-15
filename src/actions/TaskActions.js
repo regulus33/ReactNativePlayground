@@ -16,6 +16,6 @@ export const taskCreate = ({name, insights, dueDate}) => {
   //more like and SQL query
   const { currentUser } = firebase.auth();
 
-  firebase.database().ref(`/users/${currentUser.uid}/employees`)
-    .push({ name, insight, dueDate });
+  firebase.database().ref(`/users/${currentUser.uid}/tasks`)
+    .push({ name, insights, dueDate });
 };
