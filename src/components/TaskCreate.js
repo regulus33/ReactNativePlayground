@@ -2,9 +2,15 @@ import React, { Component } from 'react';
 import { Picker, Text } from 'react-native';
 import { Card, CardSection, Input, Button } from './common'
 import { connect } from 'react-redux';
-import { taskUpdate } from '../actions';
+import { taskUpdate, taskCreate } from '../actions';
 
 class TaskCreate extends Component {
+
+  onButtonPress() {
+    const { name, insights, dueDate} = this.props;
+
+    this.props.taskCreate({ name, insights, dueDate})
+  }
 
   render() {
 
@@ -46,7 +52,7 @@ class TaskCreate extends Component {
         </CardSection>
 
         <CardSection>
-          <Button>
+          <Button onPress={this.onButtonPress.bind(this)}>
             Create
           </Button>
         </CardSection>
@@ -68,4 +74,4 @@ const mapStateToProps = (state) => {
   return { name, insights, dueDate }
 };
 
-export default connect(mapStateToProps, { taskUpdate })(TaskCreate);
+export default connect(mapStateToProps, { taskUpdate, taskCreate })(TaskCreate);

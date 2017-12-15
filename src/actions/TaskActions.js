@@ -8,3 +8,8 @@ export const taskUpdate = ({ prop, value }) => {
     payload: { prop, value }
   };
 };
+
+
+export const taskCreate = ({name, insights, dueDate}) => {
+  console.log(name, insights, dueDate)
+};
