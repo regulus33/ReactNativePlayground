@@ -1,3 +1,4 @@
+import firebase from 'firebase'
 import {
   TASK_UPDATE
 } from './types';
@@ -11,5 +12,10 @@ export const taskUpdate = ({ prop, value }) => {
 
 
 export const taskCreate = ({name, insights, dueDate}) => {
-  console.log(name, insights, dueDate)
+  //the ref is not a url, its a path to your dataStore
+  //more like and SQL query
+  const { currentUser } = firebase.auth();
+
+  firebase.database().ref(`/users/${currentUser.uid}/employees`)
+    .push({ name, insight, dueDate });
 };
