@@ -2,9 +2,11 @@ import React from 'react';
 import { View } from 'react-native';
 //making standalone components helps with styling
 // the props children are whats rendered between
+
+//Override styles with second index.
 const CardSection = (props) => {
   return(
-      <View style={styles.containerStyle}>
+      <View style={[styles.containerStyle, props.style]}>
         {props.children}
       </View>
   );

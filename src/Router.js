@@ -7,7 +7,7 @@ import TaskCreate from './components/TaskCreate';
 const RouterComponent = () => {
 
   return (
-    <Router >
+    <Router>
       <Stack key="root">
 
         <Scene key="auth" initial>
@@ -37,5 +37,7 @@ const RouterComponent = () => {
     </Router>
   )
 };
+
+
 
 export default RouterComponent

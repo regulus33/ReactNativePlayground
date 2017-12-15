@@ -29,10 +29,9 @@ class TaskCreate extends Component {
             />
         </CardSection>
 
-        <CardSection >
+        <CardSection style={{ flexDirection: 'column' }} >
           <Text style={styles.pickerTextStyle}>Due Date</Text>
           <Picker
-            style={{ flex: 1 }}
             selectedValue={this.props.dueDate}
             onValueChange={day => this.props.taskUpdate({ prop: 'dueDate', value: day })}
           >
