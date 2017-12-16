@@ -8,7 +8,7 @@ const RouterComponent = () => {
 
   return (
     <Router>
-      <Stack key="root">
+      <Stack key="root" hideNavBar>
 
         <Scene key="auth" initial>
           <Scene
