@@ -22,7 +22,8 @@ export const taskCreate = ({name, insights, dueDate}) => {
       .then(() => {
       // .then(() => Actions.taskList({ type: 'reset' }));
         dispatch({ type: TASK_CREATE });
-        Actions.taskList();
+        Actions.pop();
+        // Actions.taskList();
       });
   };
 };
