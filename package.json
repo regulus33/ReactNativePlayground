@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
+    "test": "jest",
+    "t": "jest"
   },
   "dependencies": {
     "firebase": "^4.8.0",
@@ -25,7 +26,7 @@
   },
   "jest": {
     "preset": "react-native",
-    "collectCoverage": true,
+    "collectCoverage": false,
     "coverageDirectory": "__coverage__",
     "testRegex": "./__tests__/[^setup].*.js$",
     "transformIgnorePatterns": [

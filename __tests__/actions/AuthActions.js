@@ -7,6 +7,10 @@ describe('auth actions', () => {
     describe('emailChanged', () => {
       it('has the correct type', () => {
         expect(emailChanged().type).toEqual(EMAIL_CHANGED);
-      })
-    })
-})
+      });
+
+      it('has the correct payload', () => {
+
+      });
+    });
+});

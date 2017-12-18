@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Code coverage report for taskman/src/actions/index.js</title>
+    <title>Code coverage report for taskman/src/reducers/index.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../../prettify.css" />
     <link rel="stylesheet" href="../../../base.css" />
@@ -16,7 +16,7 @@
 <div class='wrapper'>
   <div class='pad1'>
     <h1>
-      <a href="../../../index.html">All files</a> / <a href="index.html">taskman/src/actions</a> index.js
+      <a href="../../../index.html">All files</a> / <a href="index.html">taskman/src/reducers</a> index.js
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
@@ -45,10 +45,40 @@
 <pre><table class="coverage">
 <tr><td class="line-count quiet">1
 2
-3</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">export * from './AuthActions';
-export * from './TaskActions';
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { combineReducers } from 'redux';
+import AuthReducer from './AuthReducer';
+import TaskFormReducer from './TaskFormReducer'
+import TasksReducer from './TasksReducer'
+&nbsp;
+export default combineReducers({
+    // auth piece of state is produced by the Auth reducer
+    auth: AuthReducer,
+    taskForm: TaskFormReducer,
+    tasks: TasksReducer
+});
+&nbsp;
 &nbsp;</pre></td></tr>
 </table></pre>
 <div class='push'></div><!-- for sticky footer -->
