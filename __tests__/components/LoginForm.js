@@ -5,16 +5,43 @@ import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 import reducers from '../../src/reducers';
 import ReduxThunk from 'redux-thunk';
+import { shallow } from 'enzyme';
 
 import renderer from 'react-test-renderer';
 
-it('renders correctly', () => {
+import configureStore from 'redux-mock-store';
 
-  const store = createStore(reducers, {}, applyMiddleware(ReduxThunk));
-  const tree = renderer.create(
-  <Provider store={store} >
-    <LoginForm  />
-  </Provider>
-    ).toJSON();
-  expect(tree).toMatchSnapshot();
+import { configure } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+
+configure({ adapter: new Adapter() });
+
+// imported as a connected component!
+
+const middlewares = []; // you can mock any middlewares here if necessary
+// const mockStore = configureStore(middlewares);
+
+console.log(configureStore(reducers, {}, applyMiddleware(ReduxThunk)))
+const mockStore = configureStore(reducers, {}, applyMiddleware(ReduxThunk))
+
+
+
+const initial = {
+  auth: {
+    email: '',
+    password: '',
+    user: null,
+    error: '',
+    loading: false
+  }
+}
+
+describe('Testing LoginForm', () => {
+  it('renders as expected', () => {
+    const wrapper = shallow(
+      <LoginForm/>,
+      { context: { store: mockStore(initial) } },
+    );
+    expect(wrapper.dive()).toMatchSnapshot();
+  });
 });

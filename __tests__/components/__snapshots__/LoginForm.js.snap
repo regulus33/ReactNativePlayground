@@ -1,228 +1,355 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders correctly 1`] = `
-<View
-  style={
-    Object {
-      "borderBottomWidth": 0,
-      "borderColor": "#ddd",
-      "borderRadius": 2,
-      "borderWidth": 1,
-      "elevation": 1,
-      "marginLeft": 5,
-      "marginRight": 5,
-      "marginTop": 10,
-      "shadowColor": "#000",
-      "shadowOffset": Object {
-        "height": 2,
-        "width": 0,
-      },
-      "shadowOpacity": 0.1,
-      "shadowRadius": 2,
-    }
-  }
->
-  <View
-    style={
-      Array [
-        Object {
-          "backgroundColor": "#fff",
-          "borderBottomWidth": 1,
-          "borderColor": "#ddd",
-          "flexDirection": "row",
-          "justifyContent": "flex-start",
-          "padding": 5,
-          "position": "relative",
-        },
-        undefined,
-      ]
-    }
-  >
-    <View
-      style={
-        Object {
-          "alignItems": "center",
-          "flex": 1,
-          "flexDirection": "row",
-          "height": 40,
-        }
-      }
-    >
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-        style={
-          Object {
-            "flex": 1,
-            "fontSize": 18,
-            "paddingLeft": 20,
+exports[`Testing CameraSettings renders as expected 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <LoginForm
+    email=""
+    emailChanged={[Function]}
+    error=""
+    loading={false}
+    loginUser={[Function]}
+    password=""
+    passwordChanged={[Function]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        <CardSection>
+          <Input
+            label="Email"
+            onChangeText={[Function]}
+            placeholder="email@gmail.com"
+            value=""
+          />
+        </CardSection>,
+        <CardSection>
+          <Input
+            label="Password"
+            onChangeText={[Function]}
+            placeholder="password"
+            secureTextEntry={true}
+            value=""
+          />
+        </CardSection>,
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "alignSelf": "center",
+              "color": "red",
+              "fontSize": 20,
+            }
           }
-        }
-      >
-        Email
-      </Text>
-      <TextInput
-        allowFontScaling={true}
-        autoCorrect={false}
-        onChangeText={[Function]}
-        placeholder="email@gmail.com"
-        secureTextEntry={undefined}
-        style={
-          Object {
-            "color": "#000",
-            "flex": 2,
-            "fontSize": 18,
-            "lineHeight": 23,
-            "paddingLeft": 5,
-            "paddingRight": 5,
-          }
-        }
-        value=""
-      />
-    </View>
-  </View>
-  <View
-    style={
-      Array [
-        Object {
-          "backgroundColor": "#fff",
-          "borderBottomWidth": 1,
-          "borderColor": "#ddd",
-          "flexDirection": "row",
-          "justifyContent": "flex-start",
-          "padding": 5,
-          "position": "relative",
-        },
-        undefined,
-      ]
-    }
-  >
-    <View
-      style={
-        Object {
-          "alignItems": "center",
-          "flex": 1,
-          "flexDirection": "row",
-          "height": 40,
-        }
-      }
-    >
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-        style={
-          Object {
-            "flex": 1,
-            "fontSize": 18,
-            "paddingLeft": 20,
-          }
-        }
-      >
-        Password
-      </Text>
-      <TextInput
-        allowFontScaling={true}
-        autoCorrect={false}
-        onChangeText={[Function]}
-        placeholder="password"
-        secureTextEntry={true}
-        style={
-          Object {
-            "color": "#000",
-            "flex": 2,
-            "fontSize": 18,
-            "lineHeight": 23,
-            "paddingLeft": 5,
-            "paddingRight": 5,
-          }
-        }
-        value=""
-      />
-    </View>
-  </View>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
+        >
+          
+        </Text>,
+        <CardSection>
+          <Button
+            onPress={[Function]}
+          >
+            Login
+          </Button>
+        </CardSection>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
       Object {
-        "alignSelf": "center",
-        "color": "red",
-        "fontSize": 20,
-      }
-    }
-  >
-    
-  </Text>
-  <View
-    style={
-      Array [
-        Object {
-          "backgroundColor": "#fff",
-          "borderBottomWidth": 1,
-          "borderColor": "#ddd",
-          "flexDirection": "row",
-          "justifyContent": "flex-start",
-          "padding": 5,
-          "position": "relative",
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": <Input
+            label="Email"
+            onChangeText={[Function]}
+            placeholder="email@gmail.com"
+            value=""
+          />,
         },
-        undefined,
-      ]
-    }
-  >
-    <View
-      accessibilityComponentType={undefined}
-      accessibilityLabel={undefined}
-      accessibilityTraits={undefined}
-      accessible={true}
-      collapsable={undefined}
-      hasTVPreferredFocus={undefined}
-      hitSlop={undefined}
-      isTVSelectable={true}
-      nativeID={undefined}
-      onLayout={undefined}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
-      style={
-        Object {
-          "alignSelf": "stretch",
-          "backgroundColor": "#fff",
-          "borderColor": "#33cccc",
-          "borderRadius": 5,
-          "borderWidth": 1,
-          "flex": 1,
-          "marginLeft": 5,
-          "marginRight": 5,
-          "opacity": 1,
-        }
-      }
-      testID={undefined}
-      tvParallaxProperties={undefined}
-    >
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-        style={
-          Object {
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "label": "Email",
+            "onChangeText": [Function],
+            "placeholder": "email@gmail.com",
+            "value": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": <Input
+            label="Password"
+            onChangeText={[Function]}
+            placeholder="password"
+            secureTextEntry={true}
+            value=""
+          />,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "label": "Password",
+            "onChangeText": [Function],
+            "placeholder": "password",
+            "secureTextEntry": true,
+            "value": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "accessible": true,
+          "allowFontScaling": true,
+          "children": "",
+          "ellipsizeMode": "tail",
+          "style": Object {
             "alignSelf": "center",
-            "color": "#33cccc",
-            "fontSize": 16,
-            "fontWeight": "600",
-            "paddingBottom": 10,
-            "paddingTop": 10,
-          }
-        }
-      >
-        Login
-      </Text>
-    </View>
-  </View>
-</View>
+            "color": "red",
+            "fontSize": 20,
+          },
+        },
+        "ref": null,
+        "rendered": "",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": <Button
+            onPress={[Function]}
+          >
+            Login
+          </Button>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": "Login",
+            "onPress": [Function],
+          },
+          "ref": null,
+          "rendered": "Login",
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <CardSection>
+            <Input
+              label="Email"
+              onChangeText={[Function]}
+              placeholder="email@gmail.com"
+              value=""
+            />
+          </CardSection>,
+          <CardSection>
+            <Input
+              label="Password"
+              onChangeText={[Function]}
+              placeholder="password"
+              secureTextEntry={true}
+              value=""
+            />
+          </CardSection>,
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "alignSelf": "center",
+                "color": "red",
+                "fontSize": 20,
+              }
+            }
+          >
+            
+          </Text>,
+          <CardSection>
+            <Button
+              onPress={[Function]}
+            >
+              Login
+            </Button>
+          </CardSection>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": <Input
+              label="Email"
+              onChangeText={[Function]}
+              placeholder="email@gmail.com"
+              value=""
+            />,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "label": "Email",
+              "onChangeText": [Function],
+              "placeholder": "email@gmail.com",
+              "value": "",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": <Input
+              label="Password"
+              onChangeText={[Function]}
+              placeholder="password"
+              secureTextEntry={true}
+              value=""
+            />,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "label": "Password",
+              "onChangeText": [Function],
+              "placeholder": "password",
+              "secureTextEntry": true,
+              "value": "",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "accessible": true,
+            "allowFontScaling": true,
+            "children": "",
+            "ellipsizeMode": "tail",
+            "style": Object {
+              "alignSelf": "center",
+              "color": "red",
+              "fontSize": 20,
+            },
+          },
+          "ref": null,
+          "rendered": "",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": <Button
+              onPress={[Function]}
+            >
+              Login
+            </Button>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": "Login",
+              "onPress": [Function],
+            },
+            "ref": null,
+            "rendered": "Login",
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+    "context": Object {
+      "store": Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      },
+    },
+  },
+}
 `;
