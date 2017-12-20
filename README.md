@@ -1,5 +1,7 @@
 # t a s k m a n
 
+A React Native Passion Project
+
 A mobile app that aims to eliminiate the all or nothing attitude about task completion, productivity and developing healthy habits.
 
 ## This app solves this problem in x ways
@@ -11,11 +13,6 @@ A mobile app that aims to eliminiate the all or nothing attitude about task comp
 ### I will build with these long term goals in mind:
 * * Uses the React Native gaming engine to tap into users' award systems, making real life task completion like real life task completion
 * * Mirrors a social media app, encouraging users to share their achievements, create honor systems and collaborate on big projects.
-
-
-I want this app to change lives...
-
-Open source? TBD
 
 ### Setup for development:
 
@@ -39,7 +36,7 @@ or
 
 ```open dev options on android with command + m```
 
-## esling config
+## eslint config
 
 ```npm install --save-dev eslint-config-rallycoding```
 
